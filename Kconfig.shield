@@ -1,0 +1,23 @@
+# Kconfig.shield
+
+menu "MOTTABLEKEY Shield Configuration"
+
+config MOTTABLEKEY_FEATURE
+    bool "Enable MOTTABLEKEY Features"
+    default y
+    help
+      Enable additional features specific to the MOTTABLEKEY shield.
+
+config MOTTABLEKEY_BACKLIGHT
+    bool "Enable Backlight"
+    default n
+    help
+      Enable backlighting for the MOTTABLEKEY keyboard.
+
+config MOTTABLEKEY_RGB
+    bool "Enable RGB Lighting"
+    default n
+    help
+      Enable RGB lighting effects on the MOTTABLEKEY keyboard.
+
+endmenu

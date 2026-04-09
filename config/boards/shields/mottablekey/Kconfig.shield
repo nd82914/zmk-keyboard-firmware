@@ -1,0 +1,5 @@
+config SHIELD_MOTTABLEKEY_R
+    def_bool $(shields_list_contains,mottablekey_R)
+
+config SHIELD_MOTTABLEKEY_L
+    def_bool $(shields_list_contains,mottablekey_L)
