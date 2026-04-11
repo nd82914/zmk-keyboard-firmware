@@ -49,10 +49,10 @@ python -m west zephyr-export
 
 ```bash
 # 右半（トラックボール付き）
-west build -s zmk/app -d build/right -b seeeduino_xiao_ble -- -DSHIELD=mottablekey_R
+west build -s zmk/app -d build/right -b xiao_ble//zmk -- -DSHIELD=mottablekey_R
 
 # 左半
-west build -p -s zmk/app -d build/left -b seeeduino_xiao_ble -- -DSHIELD=mottablekey_L
+west build -p -s zmk/app -d build/left -b xiao_ble//zmk -- -DSHIELD=mottablekey_L
 ```
 
 成功時のアーティファクト:

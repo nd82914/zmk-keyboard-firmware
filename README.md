@@ -2,11 +2,14 @@
 
 `zmk-config-roBa` と同系統の構成で、GitHub Actions / ローカル `west build` の両方に対応しています。
 
+このリポジトリでは `config/` 配下を正本として運用します。
+
 ## 構成
 
 - `build.yaml`: CI ビルド対象（board + shield）
 - `config/west.yml`: ZMK マニフェスト
 - `config/mottablekey.keymap`: レイヤーとキー割当
+- `config/mottablekey.json`: Keymap Editor 向けレイアウト定義
 - `config/boards/shields/mottablekey/*`: シールド定義（`Kconfig*`, `*.overlay`, `*.conf`, `*.dtsi`）
 - `.github/workflows/build.yml`: push/PR 時の自動ビルド
 
@@ -19,8 +22,8 @@ west update
 west zephyr-export
 
 # Right
-west build -s zmk/app -b seeeduino_xiao_ble -- -DSHIELD=mottablekey_R
+west build -s zmk/app -b xiao_ble//zmk -- -DSHIELD=mottablekey_R
 
 # Left
-west build -p -s zmk/app -b seeeduino_xiao_ble -- -DSHIELD=mottablekey_L
+west build -p -s zmk/app -b xiao_ble//zmk -- -DSHIELD=mottablekey_L
 ```
