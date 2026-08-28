@@ -71,7 +71,7 @@
         motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         zephyr,axis-x = <1>;
         zephyr,axis-y = <0>;
-        invert-y;
+        invert-x;
         res-cpi = <400>;
         smart-mode;
     };
