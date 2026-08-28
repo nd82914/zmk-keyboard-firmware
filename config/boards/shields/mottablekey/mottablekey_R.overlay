@@ -73,6 +73,5 @@
         zephyr,axis-y = <0>;
         invert-x;
         res-cpi = <400>;
-        smart-mode;
     };
 };
