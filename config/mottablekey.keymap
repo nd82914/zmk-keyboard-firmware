@@ -24,12 +24,12 @@
 
         shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <22 23>;
+            key-positions = <21 20>;
         };
 
         MCK {
             bindings = <&mkp MCLK>;
-            key-positions = <32 33>;
+            key-positions = <28 29>;
         };
     };
 
