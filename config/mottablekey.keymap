@@ -13,6 +13,11 @@
     quick-tap-ms = <0>;
 };
 
+&trackball {
+    automouse-layer = <MOUSE>;
+    scroll-layers = <SCROLL>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
