@@ -34,7 +34,7 @@
 
         layer6 {
             bindings = <&mo 6>;
-            key-positions = <15 25>;
+            key-positions = <29 38>;
         };
     };
 
